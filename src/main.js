@@ -116,7 +116,7 @@ function finishButton(){
 function buildMini(id){
   const a=document.querySelector("#playarea");
   if(id==="match"){
-    const items=["🌷","🌻","🌸","🌼","🌻","🌷"];
+    const items=["🌷","🌷","🌻","🌻","🌸","🌸"];
     a.innerHTML=`<p>Tap two matching flowers.</p><div class="tiles">${items.map((x,i)=>`<button data-i="${i}">❓</button>`).join("")}</div>`;
     let open=[],matched=0;
     a.querySelectorAll("button").forEach((b,i)=>b.onclick=()=>{
